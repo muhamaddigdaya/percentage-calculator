@@ -20,8 +20,8 @@
 
     <!-- form 2 -->
     <form id="form2">
-    <input type="text" id="number2" oninput="calculate2()" required> is
-    of what percent of <input type="text" id="percentage2" oninput="calculate2()" required> ?<br><br>
+    <input type="text" id="number2" size="7" oninput="calculate2()" required> is
+    of what percent of <input type="text" size="7" id="percentage2" oninput="calculate2()" required> ?<br><br>
     = <input type="text" size="7" id="result2"  readonly> %
     </form><br>
 
@@ -42,8 +42,8 @@
 
     <!-- form 5 -->
     <form>
-        What is <input type="number" id="number5" required oninput="calculate5()" size="7"> -
-        <input type="number" id="percentage5" required oninput="calculate5()" size="7"> % ?
+        What is <input type="number" id="number5" size="7" required oninput="calculate5()" > -
+        <input type="number" id="percentage5" size="7" required oninput="calculate5()"> % ?
         <br><br>
         =
         <input type="text" id="result5" readonly size="7">
@@ -51,8 +51,8 @@
 
     <!-- form 6 -->
         <form>
-            What is <input type="number" id="number6" required oninput="calculate6()" size="7"> + 
-            <input type="number" id="percentage6" required oninput="calculate6()" size="7"> % ?
+            What is <input type="number" size="7" id="number6" required oninput="calculate6()"> + 
+            <input type="number" size="7" id="number6" required oninput="calculate6()"> % ?
             <br><br>
             =
             <input type="text" id="result6" readonly size="7">
@@ -119,7 +119,7 @@
     function calculate6() {
         var percentage6 = document.getElementById("percentage6").value;
         var number6 = document.getElementById("number6").value;
-        var result6 =  +number6 + (number6 * (percentage6 / 100));
+        var result6 =  number6 + (number6 * (percentage6 / 100));
         document.getElementById("result6").value = result6;
     }
 </script>
@@ -137,7 +137,7 @@
     form {
         margin-left:auto;
         margin-right: auto;
-        width: 60%;
+        width: 80%;
         border: black 3px solid;
         background-color: rgba(207, 207, 241, 0.9);
         padding: 16px;
@@ -145,7 +145,7 @@
     }
 
     .form-container {
-        width: 60%;
+        width: 80%;
         margin-left:auto;
         margin-right: auto;
         margin-top: 32px;
@@ -163,6 +163,7 @@
     }
 
     input {
+        width:12%;
         border: black 2px solid;
         background-color: rgba(246, 246, 255, 0.9);
     }
@@ -182,6 +183,16 @@
         font-family: 'Martian Mono', monospace;
         font-weight: bolder;
         font-size: 48px;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 </style>
 </body>
