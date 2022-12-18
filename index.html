@@ -1,201 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online percentage calculator tools | is what % of ? | What is % of ? | How many percentage increase from to | How many percentage decrease from to | What nominal after subtracting by % will result | What nominal after subtracting by % will equal | What nominal subtracted by % equal | What nominal substracted by % will resulted">
-    <title>Percentage Calculator (%) | Subtract, Add, Increase, Decrease</title>
-    <link rel="shortcut icon" type="image/x-icon" href="ASCII.jpg" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7888386444255974"
-    crossorigin="anonymous"></script>
-</head>
-<h1>Percentage Calculator</h1>
-<!-- ------------------------------------------------------------------------------------------------ -->
-<div class="form-container">
-    <!-- form 1-->
-    <form id="form1">
-    What is the <input type="text" id="percentage1" oninput="calculate1()" required> % of
-    <input type="text" id="number1" oninput="calculate1()" required> ?<br><br>
-    = <input type="text" id="result1"  readonly>
-    </form><br>
-
-    <!-- form 2 -->
-    <form id="form2">
-    <input type="text" id="number2" oninput="calculate2()" required> is
-    of what percent of <input type="text" id="percentage2" oninput="calculate2()" required> ?<br><br>
-    = <input type="text" id="result2"  readonly> %
-    </form><br>
-
-    <!-- form 3 -->
-    <form id="form3">
-    What nominal after subtracting by <input type="text" id="percentage3" oninput="calculate3()" required> %
-    will result  <input type="text" id="number3" oninput="calculate3()" required> ?<br><br>
-    = <input type="text" id="result3"  readonly><br>
-    </form><br>
-
-    <!-- form 4 -->
-    <form id="form4">
-    How many percentage decrease/increase from <input type="text" id="originalNumber" oninput="calculatePercentageChange()" required>
-    to <input type="text" id="newNumber" oninput="calculatePercentageChange()" required>
-    <br><br>
-    = <input type="text" id="result4" readonly> %
-    </form><br>
-
-    <!-- form 5 -->
-    <form>
-        What is <input type="number" id="number5" required oninput="calculate5()" > -
-        <input type="number" id="percentage5" required oninput="calculate5()"> % ?
-        <br><br>
-        =
-        <input type="text" id="result5" readonly>
-    </form><br>
-
-    <!-- form 6 -->
-        <form>
-            What is <input type="number" id="number6" required oninput="calculate6()"> + 
-            <input type="number" id="percentage6" required oninput="calculate6()"> % ?
-            <br><br>
-            =
-            <input type="text" id="result6" readonly>
-        </form> 
-      
-</div>
-
-<script>
-
-/*------------------------------------------------------------------------------------------------*/
-     
-    /*code 1*/
-    function calculate1() {
-        var number1 = document.getElementById("number1").value;
-        var percentage1 = document.getElementById("percentage1").value;
-        var result1 = number1 * (percentage1 / 100);
-        document.getElementById("result1").value = result1;
-    }
-
-/*------------------------------------------------------------------------------------------------*/
-    
-    /*code 2*/
-    function calculate2() {
-    var number2 = document.getElementById("number2").value;
-    var percentage2 = document.getElementById("percentage2").value;
-    var result2 = number2 / (percentage2 / 100);
-    document.getElementById("result2").value = result2;
-    }
-
-/*------------------------------------------------------------------------------------------------*/
-
-    /*code 3*/
-    function calculate3() {
-        var percentage3 = document.getElementById("percentage3").value;
-        var number3 = document.getElementById("number3").value;
-        var result3 = number3 / (1 - percentage3 / 100);
-        document.getElementById("result3").value = result3;
-    }
-
-/*------------------------------------------------------------------------------------------------*/
-
-    /*code 4*/
-    function calculatePercentageChange() {
-        var newNumber = document.getElementById("newNumber").value;
-        var originalNumber = document.getElementById("originalNumber").value;
-        var percentageChange = ((newNumber - originalNumber) / originalNumber) * 100;
-        document.getElementById("result4").value = percentageChange;
-    }
-
-/*------------------------------------------------------------------------------------------------*/
-    
-    /*code 5*/
-    function calculate5() {
-        var percentage5 = document.getElementById("percentage5").value;
-        var number5 = document.getElementById("number5").value;
-        var percentagePercentOfNumber1 = number5 * (percentage5 / 100);
-        var result5 = number5 - percentagePercentOfNumber1;
-        document.getElementById("result5").value = result5;
-    }
-
-/*------------------------------------------------------------------------------------------------*/
-    
-    /*code 6*/
-    function calculate6() {
-        var percentage6 = document.getElementById("percentage6").value;
-        var number6 = document.getElementById("number6").value;
-        var result6 =  number6 + (number6 * (percentage6 / 100));
-        document.getElementById("result6").value = result6;
-    }
-</script>
-
-<style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
-
-    html {
-        color: rgba(14, 13, 27, 0.9);
-        background-color: rgba(242, 242, 255, 0.9);
-        font-size: 1.5rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-    form {
-        margin-left:auto;
-        margin-right: auto;
-        width: 80%;
-        border: black 3px solid;
-        background-color: rgba(207, 207, 241, 0.9);
-        padding: 16px;
-        box-shadow: 8px 8px black;
-    }
-
-    .form-container {
-        width: 80%;
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: 32px;
-        margin-bottom: 64px;
-        padding: 64px 32px;
-        border: black 4px;
-        box-shadow:16px 16px;
-        background-color: blueviolet;
-    }
-
-    button {
-        background-color: brown;
-        color: white;
-        padding: 8px;
-    }
-
-    input {
-        width:12%;
-        border: black 2px solid;
-        background-color: rgba(246, 246, 255, 0.9);
-    }
-
-    #result1, #result2, #result3, #result4, #result5 {
-        box-shadow: 2px 2px rgba(90, 90, 255, 0.9);
-    }
-
-    select {
-        border: black 2px solid;
-        background-color: rgba(246, 246, 255, 0.9);
-        box-shadow: 2px 2px rgba(90, 90, 255, 0.9);
-    }
-
-    h1 {
-        text-align: center;
-        font-family: 'Martian Mono', monospace;
-        font-weight: bolder;
-        font-size: 48px;
-    }
-
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
-
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-</style>
-</body>
+<html>
+  <head>
+    <title>AI-Built Web</title>
+    <style>
+        body {
+          font-family: 'Open Sans', sans-serif;
+        }
+        div {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        a {
+          color: black;
+        }
+        a:visited {
+          color: darkolivegreen;
+        }
+        a:hover {
+          color: darkolivegreen;
+        }
+        @media (max-width: 992px) {
+          h1 {
+            font-size: 24px;
+          }
+          a {
+            font-size: 16px;
+          }
+        }
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+        @media (max-width: 576px) {
+          h1 {
+            font-size: 18px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+        @media (max-width: 400px) {
+          h1 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <div>
+      <h1>AI built this web!</h1>
+      <a href="percentage.html">Percentage Calculator</a>
+    </div>
+  </body>
 </html>
