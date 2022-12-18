@@ -1,1 +1,1 @@
-# jabjoi.github.io/index.html
+# jabjoi.github.io
