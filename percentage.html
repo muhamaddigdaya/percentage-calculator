@@ -160,6 +160,8 @@
         border: black 4px;
         box-shadow:16px 16px;
         background-color: blueviolet;
+        position: relative;
+        z-index: 1;
     }
 
     button {
@@ -190,12 +192,12 @@
         font-size: 48px;
     }
     footer {
-         position: absolute;
-         bottom: 0;
-         left: 50%;
-         transform: translateX(-50%);
-         text-align: center;
-         margin: 32px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 0;
     }
 </style>
 </body>
