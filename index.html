@@ -27,6 +27,8 @@
             font-family: 'Unbounded', cursive;
             font-size: 4vh;
             text-align: center;
+            -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .projects {
@@ -38,6 +40,7 @@
         }
 
         .lists {
+            bottom: 64px;
             text-align: center;
             font-size: 4vh;
             color: white;
@@ -64,8 +67,20 @@
   100% {
     text-shadow: -1px 1px orange, -2px 2px orange, -3px 3px orange, -4px 4px orange;
   }
-}
 
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
     </style>
 </head>
 <body>
@@ -74,9 +89,9 @@
     </div>
     <div class="projects">
         <ul>
-            <li><a href="percentage.html" class="percentage lists">Percentage Calculator</a></li>
-            <li><a href="percentage.html" class="percentage lists">Percentage Calculator</a></li>
-            <li><a href="percentage.html" class="percentage lists">Percentage Calculator</a></li>
+            <li><a href="https://muhamaddigdaya.notion.site/Muhamad-Digdaya-9b58f550f3f14e08b794b24847bd4268" class="lists">UX Case Studies Portfolio</a></li>
+            <li><a href="https://www.figma.com/@muhamaddigdaya" class="lists">UI Community Contribution</a></li>
+            <li><a href="percentage.html" class="lists">Percentage Calculator</a></li>
         </ul>
     </div>
 </body>
