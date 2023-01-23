@@ -22,8 +22,8 @@
 
     <!-- form 2 -->
     <form id="form2">
-    <input type="text" id="number2" oninput="calculate2()" required> is<br>
-    of what percent of <input type="text" id="percentage2" oninput="calculate2()" required> ?<br><br>
+    <input type="text" size="7" id="number2" oninput="calculate2()" required> is<br>
+    of what percent of <input type="text" size="7" id="percentage2" oninput="calculate2()" required> ?<br><br>
     = <input type="text" size="7" id="result2"  readonly> %
     </form><br>
 
@@ -44,8 +44,8 @@
 
     <!-- form 5 -->
     <form>
-        What is <input type="number" id="number5" required oninput="calculate5()" size="7"> -
-        <input type="number" id="percentage5" required oninput="calculate5()" size="7"> % ?
+        What is <input type="text" size="7" id="number5" required oninput="calculate5()"> -
+        <input type="text" size="7" id="percentage5" required oninput="calculate5()"> % ?
         <br><br>
         =
         <input type="text" id="result5" readonly size="7">
@@ -53,8 +53,8 @@
 
     <!-- form 6 -->
         <form>
-            What is <input type="number" id="number6" required oninput="calculate6()" size="7"> + 
-            <input type="number" id="percentage6" required oninput="calculate6()" size="7"> % ?
+            What is <input type="text" size="7" id="number6" required oninput="calculate6()"> + 
+            <input type="text" size="7" id="percentage6" required oninput="calculate6()"> % ?
             <br><br>
             =
             <input type="text" id="result6" readonly size="7">
@@ -137,13 +137,14 @@
     html {
         color: rgba(14, 13, 27, 0.9);
         background-color: rgba(242, 242, 255, 0.9);
-        font-size: 1.5rem;
+        font-size: 2.4vh;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
     form {
         margin-left:auto;
         margin-right: auto;
-        width: 350px;
+        width: 80%;
+        max-width: 500px;
         border: black 3px solid;
         background-color: rgba(207, 207, 241, 0.9);
         padding: 16px;
@@ -151,7 +152,7 @@
     }
 
     .form-container {
-        width: 500px;
+        width: 50%;
         margin-left:auto;
         margin-right: auto;
         margin-top: 32px;
@@ -189,7 +190,7 @@
         text-align: center;
         font-family: 'Martian Mono', monospace;
         font-weight: bolder;
-        font-size: 48px;
+        font-size: 4vh;
     }
     footer {
         display: block;
