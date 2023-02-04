@@ -41,7 +41,7 @@ _e.g. How many percentages decrease/increase from **100** to **50?** = **-50%**_
 What is (number input) - (number input)% ?
 
 _e.g. What is **100** - **50%**? **= 50**_
-  > Use case: See the **decrease amount** on stock price
+  > Use case: See the **decreased price** on stock price
 
 ~~------------------------------------------------------------------------------------------~~
 
@@ -50,7 +50,7 @@ _e.g. What is **100** - **50%**? **= 50**_
 What is (number input) + (number input)% ?
 
 _e.g. What is **100** + **50%**? **= 150**_
-  > Use case: See the **increase amount** on stock price
+  > Use case: See the **increased price** on stock price
 
 ~~------------------------------------------------------------------------------------------~~
 
