@@ -23,7 +23,6 @@ _e.g. **70** is what percent of **100**? **= 70%**_
 What nominal after subtracting by (number input)% will result (number input)?
 
 _e.g. What nominal after subtracting by **10%** will **90**?  **= 100**_
-  > Use case: ***Decide price*** after substracted by **royalties and/or taxes and/or fees.**
 
 ~~------------------------------------------------------------------------------------------~~
 
@@ -32,7 +31,6 @@ _e.g. What nominal after subtracting by **10%** will **90**?  **= 100**_
 How many percentages decrease/increase from (number input) to (number input)?
 
 _e.g. How many percentages decrease/increase from **100** to **50?** = **-50%**_
-  > Use case: **Compare** price difference on percentage
 
 ~~------------------------------------------------------------------------------------------~~
 
@@ -41,7 +39,6 @@ _e.g. How many percentages decrease/increase from **100** to **50?** = **-50%**_
 What is (number input) - (number input)% ?
 
 _e.g. What is **100** - **50%**? **= 50**_
-  > Use case: See the **decreased price** on stock price
 
 ~~------------------------------------------------------------------------------------------~~
 
@@ -50,7 +47,6 @@ _e.g. What is **100** - **50%**? **= 50**_
 What is (number input) + (number input)% ?
 
 _e.g. What is **100** + **50%**? **= 150**_
-  > Use case: See the **increased price** on stock price
 
 ~~------------------------------------------------------------------------------------------~~
 
