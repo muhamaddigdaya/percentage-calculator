@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI-Created free online percentage calculator tools(aria labeled text-to-speech/screen reader friendly) | is what % of ? | What is % of ? | How many percentage increase from to | How many percentage decrease from to | What nominal after subtracting by % will result | What nominal after subtracting by % will equal | What nominal subtracted by % equal | What nominal substracted by % will resulted">
+    <meta name="description"
+        content="AI-Created free online percentage calculator tools(aria labeled text-to-speech/screen reader friendly) | is what % of ? | What is % of ? | How many percentage increase from to | How many percentage decrease from to | What nominal after subtracting by % will result | What nominal after subtracting by % will equal | What nominal subtracted by % equal | What nominal substracted by % will resulted">
     <title>Percentage Calculator (%) | Subtract, Add, Increase, Decrease</title>
     <link rel="shortcut icon" type="image/x-icon" href="ASCII.jpg" />
 </head>
-<h1><a href="https://github.com/muhamaddigdaya/percentage-calculator/" target="_blank" rel="noopener noreferrer">Percentage Calculator</a></h1>
+<h1><a href="https://github.com/muhamaddigdaya/percentage-calculator/" target="_blank"
+        rel="noopener noreferrer">Percentage Calculator</a></h1>
 <!-- ------------------------------------------------------------------------------------------------ -->
 <div class="form-container">
     <!-- form 1-->
     <form id="form1">
-    What is the <input type="text" aria-label="percentage-input" size="7" id="percentage1" oninput="calculate1()" required> % of
-    <input type="text" aria-label="number-input" size="7" id="number1" oninput="calculate1()" required> ?<br><br>
-    = <input type="text" aria-label="result" size="7" id="result1"  readonly>
+        What is the <input type="text" aria-label="percentage-input" size="7" id="percentage1" oninput="calculate1()"
+            required> % of
+        <input type="text" aria-label="number-input" size="7" id="number1" oninput="calculate1()" required> ?<br><br>
+        = <input type="text" aria-label="result" size="7" id="result1" readonly>
     </form><br>
 
     <!-- form 2 -->
     <form id="form2">
-    <input type="text" aria-label="number-input" id="number2" oninput="calculate2()" required> is<br>
-    of what percent of <input type="text" aria-label="number-input" id="percentage2" oninput="calculate2()" required> ?<br><br>
-    = <input type="text" aria-label="result" size="7" id="result2"  readonly> %
+        <input type="text" aria-label="number-input" id="number2" oninput="calculate2()" required> is<br>
+        of what percent of <input type="text" aria-label="number-input" id="percentage2" oninput="calculate2()"
+            required> ?<br><br>
+        = <input type="text" aria-label="result" size="7" id="result2" readonly> %
     </form><br>
 
     <!-- form 3 -->
     <form id="form3">
-    What nominal after subtracting by <input type="text" aria-label="percentage-input" size="7" id="percentage3" oninput="calculate3()" required> %
-    <br>will result  <input type="text" aria-label="number-input" size="7" id="number3" oninput="calculate3()" required> ?<br><br>
-    = <input type="text" aria-label="result" size="7" id="result3"  readonly><br>
+        What nominal after subtracting by <input type="text" aria-label="percentage-input" size="7" id="percentage3"
+            oninput="calculate3()" required> %
+        <br>will result <input type="text" aria-label="number-input" size="7" id="number3" oninput="calculate3()"
+            required> ?<br><br>
+        = <input type="text" aria-label="result" size="7" id="result3" readonly><br>
     </form><br>
 
     <!-- form 4 -->
     <form id="form4">
-    What nominal after adding by <input type="text" aria-label="percentage-input" size="7" id="percentage4" oninput="calculate4()" required> %
-    <br>will result  <input type="text" aria-label="number-input" size="7" id="number4" oninput="calculate4()" required> ?<br><br>
-    
-    = <input type="text" aria-label="result" size="7" id="result4"  readonly><br>
+        What nominal after adding by <input type="text" aria-label="percentage-input" size="7" id="percentage4"
+            oninput="calculate4()" required> %
+        <br>will result <input type="text" aria-label="number-input" size="7" id="number4" oninput="calculate4()"
+            required> ?<br><br>
+
+        = <input type="text" aria-label="result" size="7" id="result4" readonly><br>
     </form><br>
-    
+
     <!-- form 5 -->
     <form id="form5">
-    How many percentage decrease/increase from <input type="text" aria-label="number-input" size="7" id="originalNumber" oninput="calculatePercentageChange()" required><br>
-    to <input type="text" aria-label="number-input" size="7" id="newNumber" oninput="calculatePercentageChange()" required>
-    <br><br>
-    = <input type="text" aria-label="result" size="7" id="result5" readonly> %
+        How many percentage decrease/increase from <input type="text" aria-label="number-input" size="7"
+            id="originalNumber" oninput="calculatePercentageChange()" required><br>
+        to <input type="text" aria-label="number-input" size="7" id="newNumber" oninput="calculatePercentageChange()"
+            required>
+        <br><br>
+        = <input type="text" aria-label="result" size="7" id="result5" readonly> %
     </form><br>
 
     <!-- form 5 -->
     <form>
         What is <input type="number" aria-label="number-input" id="number6" required oninput="calculate6()" size="7"> -
-        <input type="number" aria-label="percentage-input" id="percentage6" required oninput="calculate6()" size="7"> % ?
+        <input type="number" aria-label="percentage-input" id="percentage6" required oninput="calculate6()" size="7"> %
+        ?
         <br><br>
         =
         <input type="text" aria-label="result" id="result6" readonly size="7">
     </form><br>
 
     <!-- form 6 -->
-        <form>
-            What is <input type="number" aria-label="number-input" id="number7" required oninput="calculate7()" size="7"> + 
-            <input type="number" aria-label="percentage-input"id="percentage7" required oninput="calculate7()" size="7"> % ?
-            <br><br>
-            =
+    <form>
+        What is <input type="number" aria-label="number-input" id="number7" required oninput="calculate7()" size="7"> +
+        <input type="number" aria-label="percentage-input" id="percentage7" required oninput="calculate7()" size="7"> %
+        ?
+        <br><br>
+        =
         <input type="text" aria-label="result" id="result7" readonly size="7">
-        </form> 
-      
+    </form>
+
 </div>
 
-        <footer>
-            <p>This page is created by <a href="https://chat.openai.com" target="_blank">ChatGPT</a> with human supervision</p>
-        </footer>
-    
+<footer>
+    <p>This page is created by <a href="https://chat.openai.com" target="_blank">ChatGPT</a> with human supervision</p>
+</footer>
+
 <script>
 
-/*------------------------------------------------------------------------------------------------*/
-     
+    /*------------------------------------------------------------------------------------------------*/
+
     /*code 1*/
     function calculate1() {
         var number1 = document.getElementById("number1").value;
@@ -84,8 +97,8 @@
         document.getElementById("result1").value = result1;
     }
 
-/*------------------------------------------------------------------------------------------------*/
-    
+    /*------------------------------------------------------------------------------------------------*/
+
     /*code 2*/
     function calculate2() {
         var number2 = document.getElementById("number2").value;
@@ -94,7 +107,7 @@
         document.getElementById("result2").value = result2;
     }
 
-/*------------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------*/
 
     /*code 3*/
     function calculate3() {
@@ -104,7 +117,7 @@
         document.getElementById("result3").value = result3;
     }
 
-/*------------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------*/
 
     /*code 4*/
     function calculate4() {
@@ -114,7 +127,7 @@
         document.getElementById("result4").value = result4.toFixed(2);
     }
 
-/*------------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------*/
 
     /*code 5*/
     function calculatePercentageChange() {
@@ -124,8 +137,8 @@
         document.getElementById("result5").value = percentageChange;
     }
 
-/*------------------------------------------------------------------------------------------------*/
-    
+    /*------------------------------------------------------------------------------------------------*/
+
     /*code 6*/
     function calculate6() {
         var percentage6 = document.getElementById("percentage6").value;
@@ -135,31 +148,31 @@
         document.getElementById("result6").value = result6;
     }
 
-/*------------------------------------------------------------------------------------------------*/
-    
+    /*------------------------------------------------------------------------------------------------*/
+
     /*code 7*/
     function calculate7() {
         var percentage7 = document.getElementById("percentage7").value;
         var number7 = document.getElementById("number7").value;
-        var result7 =  +number7 + (number7 * (percentage7 / 100));
+        var result7 = +number7 + (number7 * (percentage7 / 100));
         document.getElementById("result7").value = result7;
     }
 </script>
 
 <style>
-
     @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
 
     html {
         color: rgba(14, 13, 27, 0.9);
         background-color: rgba(35, 0, 92, 0.9);
         font-size: 1.5rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
+
     form {
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
-        width: 350px;
+        max-width: 80%;
         border: black 3px solid;
         background-color: rgba(207, 207, 241, 0.9);
         padding: 16px;
@@ -168,16 +181,17 @@
 
     .form-container {
         width: 500px;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
         margin-top: 32px;
         margin-bottom: 64px;
         padding: 64px 32px;
         border: black 4px;
-        box-shadow:16px 16px;
+        box-shadow: 16px 16px;
         background-color: blueviolet;
         position: relative;
         display: block;
+        max-width: 60%;
     }
 
     button {
@@ -191,8 +205,15 @@
         background-color: rgba(246, 246, 255, 0.9);
     }
 
-    #result1, #result2, #result3, #result4, #result5, #result6 {
+    #result1,
+    #result2,
+    #result3,
+    #result4,
+    #result5,
+    #result6 {
         box-shadow: 2px 2px rgba(90, 90, 255, 0.9);
+        cursor: none !important;
+        ;
     }
 
     select {
@@ -208,6 +229,7 @@
         color: rgba(246, 246, 255, 0.9);
         font-size: 48px;
     }
+
     footer {
         display: block;
         bottom: 0;
@@ -231,4 +253,5 @@
     }
 </style>
 </body>
+
 </html>
