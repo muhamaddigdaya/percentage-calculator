@@ -22,7 +22,7 @@ _e.g. **70** is what percent of **100**? **= 70%**_
 
 What nominal after subtracting by (number input)% will result (number input)?
 
-_e.g. What nominal after subtracting by **10%** will **90**?  **= 100**_
+_e.g. What nominal after subtracting by **10%** will result **90**?  **= 100**_
 
 ~~------------------------------------------------------------------------------------------~~
 
