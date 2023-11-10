@@ -14,7 +14,11 @@ form {
     border: black 3px solid;
     background-color: #ffe1de;
     padding: 16px;
+}
+
+form:hover {
     box-shadow: 8px 8px black;
+    transition: 300ms;
 }
 
 .form-container {
