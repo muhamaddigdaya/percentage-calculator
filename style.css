@@ -29,7 +29,7 @@ form:hover {
     margin-top: 32px;
     margin-bottom: 64px;
     padding: 64px 32px;
-    box-shadow: 16px 16px;
+    box-shadow: 16px 16px black;
     background-color: salmon;
     position: relative;
     display: block;
