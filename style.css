@@ -14,6 +14,7 @@ form {
     border: black 3px solid;
     background-color: #ffe1de;
     padding: 16px;
+    border-radius: 8px;
 }
 
 form:hover {
